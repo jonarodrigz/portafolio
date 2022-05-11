@@ -12,56 +12,65 @@
 }
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--azul-negro);
+   
 }
 .menu{
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
-    height: 75px;
+    padding: 0;
+    height: 40px;
+    background-color: var(--azul-negro);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    align-items: center;
 }
      .nav-left ul,
     .nav-right ul {
       list-style: none;
-      padding: 0;
       margin:  0;
       display: flex;
       align-items: center;
-      height: 60px;
       justify-content: center;
+     padding: 0px 24px;
     }
-    .nav-left {
-      display: flex;
+    .nav-left, .nav-right {
+        display: flex;
+        background-color: var(--azul-negro);
+       
     }
     .nav-left ul {
       margin-left: 12px;
     }
-    .nav-left ul li ,
-    .nav-right ul li  {
+    .nav-left ul li a,
+    .nav-right ul li  a{
       text-decoration: none;
       color: var(--naranja);
       padding: 8px;
       border-radius: 8px;
       margin-left: 20px;
     }
-    .nav-left ul li:hover,
-    .nav-right ul li:hover {
+    .nav-left ul li a:hover,
+    .nav-right ul li a:hover {
      background-color: var(--naranja);
       color: var(--white);
     }
-
+    
     .acerca-container{
         display: flex;
         height: auto;
         background-color: var(--azul-negro);
+        padding: 40px 24px;
+        width: 100%;
+        text-align: center;
     }
 
     .logo{
         color: var(--white);
-        width: 50%;
         text-align: center;
-       
+       width: 50%;
     }
     .logo p{
         font-size: var(--xl);
@@ -71,7 +80,7 @@ body{
 
     .logo img{
         height: 80%;
-        width: 50%;
+        width: 70%;
     }
 
     .acerca{
@@ -104,7 +113,7 @@ body{
     .portafolio-container{
         background-color: var(--gris);
         height: auto;
-        padding: 24px;
+        padding: 32px 24px;
         width: 100%;
     }
 
@@ -131,7 +140,7 @@ body{
     .proyectos-card{
         background-color: var(--azul-negro);
         width: 240px;
-        height: 360px;
+        height: 280px;
         border-radius: 10px;
         border: none;
         margin-bottom: 10px;
@@ -140,7 +149,7 @@ body{
 
     .proyectos-card img{
         width: 240px;
-        height: 50%;
+        height: 40%;
         border-radius: 8px 8px 0px 0px;
     }
     .titulo-proyecto{
@@ -196,7 +205,7 @@ body{
     .skill{
         background-color: var(--white);
         height: auto; 
-        padding: 50px 24px;
+        padding: 40px 24px;
         text-align: center;
         width: 100%;
     }
@@ -228,7 +237,7 @@ body{
     .certificados{
         background-color: var(--gris);
         height: auto;
-        padding: 24px;
+        padding: 40px 24px;
         width: 100%;
     }
 
@@ -250,7 +259,7 @@ body{
     .contacto-container{
         background-color: var(--white);
         height: auto; 
-        padding: 50px 24px;
+        padding: 40px 24px;
         text-align: center;
         width: 100%;
     }
@@ -269,13 +278,16 @@ body{
     }
 
     .footer{
-        display: block;
+        display: inline-block;
         background-color: var(--azul-negro);
-        height: auto; 
+        height: 80px; 
         text-align: center;
         color: var(--white);
         width: 100%;
+        align-items: center;
+        padding: 0px 24px;
     }
+    
 
     @media (max-width: 640px) {
         .menu{
