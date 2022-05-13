@@ -82,3 +82,14 @@ function vermas(){
     }
     boton.style.display = "inline";
  }
+
+ function addResponsive(){
+     var divnav = document.getElementById("nav-right");
+     if(divnav.className === "nav-right"){
+         divnav.className += " responsive";
+        divnav.style.width = "200px";
+     }else {
+         divnav.className = "nav-right"
+         divnav.style.width = "auto";
+     }
+ }

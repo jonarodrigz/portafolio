@@ -26,6 +26,7 @@ body{
     z-index: 100;
     width: 100%;
     align-items: center;
+    
 }
      .nav-left ul,
     .nav-right ul {
@@ -44,22 +45,23 @@ body{
     .nav-left ul {
       margin-left: 12px;
     }
-    .nav-left ul li a,
-    .nav-right ul li  a{
+    .nav-left  a,
+    .nav-right  a{
       text-decoration: none;
       color: var(--naranja);
       padding: 8px;
       border-radius: 8px;
       margin-left: 20px;
+      
     }
-    .nav-left ul li a:hover,
-    .nav-right ul li a:hover {
+    .nav-left  a:hover,
+    .nav-right  a:hover {
      background-color: var(--naranja);
       color: var(--white);
     }
-    .nav-right a{
-       
-    }
+   .icon{
+       display: none;
+   }
     
     .acerca-container{
         display: flex;
@@ -324,9 +326,31 @@ body{
     
 
     @media (max-width: 640px) {
-        .menu{
-            display: none;
-        }
+       .nav-right a{ display: none;
+    }
+       .nav-right a.icon{
+         text-align: right; 
+           display: block;
+       }
+           
+       .nav-right.responsive {
+        position: relative;
+        height: 100%;
+        float: right;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+         transition: 0.5s;
+         display: block;
+      }
+      .nav-right.responsive a{
+          background-color: var(--black);
+          display: block;
+      }
+      
         .acerca-container{
             display: block;
             text-align: center;
@@ -337,4 +361,5 @@ body{
         .acerca{
             width: 100%;
         }
-      }
+    }
+      
