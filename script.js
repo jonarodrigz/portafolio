@@ -72,7 +72,7 @@ function vermas(){
     var boton = document.getElementById("vermas-certificado");
     var boton2 = document.getElementById("vermenos-certificados");
    var cuantoshay = div.childNodes.length;
-        for(let i=(cuantoshay-1);i>(cuantoshay-7);i--){
+        for(let i=(cuantoshay-1);i>(cuantoshay-9);i--){
         if(i>8){
             var img = div.lastChild;
             div.removeChild(img);
