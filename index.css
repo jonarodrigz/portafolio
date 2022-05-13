@@ -145,12 +145,16 @@ body{
     .proyectos-card{
         background-color: var(--azul-negro);
         width: 240px;
-        height: 300px;
+        height: 340px;
         border-radius: 10px;
         border: none;
         margin-bottom: 10px;
         position: relative;
         text-align: center;
+    }
+    .proyectos-card:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
     }
 
     .proyectos-card img{
