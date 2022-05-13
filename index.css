@@ -13,7 +13,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
    
 }
 .menu{
@@ -57,13 +57,16 @@ body{
      background-color: var(--naranja);
       color: var(--white);
     }
+    .nav-right a{
+       
+    }
     
     .acerca-container{
         display: flex;
         height: auto;
         background-color: var(--azul-negro);
         padding: 40px 24px;
-        width: 100%;
+        width: calc(100%-48px);
         text-align: center;
     }
 
@@ -85,17 +88,18 @@ body{
 
     .acerca{
         color: var(--white);
-        width: 50%;
+        width: 48%;
         text-align: center;
     }
 
-    .acerca button{
+    .acerca a{
         border-radius: 20px;
         background-color: var(--naranja);
         color: var(--white);
         padding: 10px;
         font-size: var(--md);
         cursor: pointer;
+        text-decoration: none;
     }
 
     .acerca p:first-child{
@@ -107,14 +111,15 @@ body{
 
     .perfil{
         font-size: var(--md);
-        margin-bottom: 40px;
+        margin: 60px 0px;
+        padding: 20px;
     }
 
     .portafolio-container{
         background-color: var(--gris);
         height: auto;
         padding: 32px 24px;
-        width: 100%;
+        width: calc(100%-48px);
     }
 
   
@@ -140,17 +145,19 @@ body{
     .proyectos-card{
         background-color: var(--azul-negro);
         width: 240px;
-        height: 280px;
+        height: 300px;
         border-radius: 10px;
         border: none;
         margin-bottom: 10px;
         position: relative;
+        text-align: center;
     }
 
     .proyectos-card img{
         width: 240px;
         height: 40%;
         border-radius: 8px 8px 0px 0px;
+        
     }
     .titulo-proyecto{
         color: var(--naranja);
@@ -170,7 +177,7 @@ body{
         color: var(--white);
         border: 1px solid var(--white);
         border-radius: 8px;
-        padding: 8px;
+        padding: 4px;
         
     }
     .proyectos-card a:hover{
@@ -181,6 +188,7 @@ body{
         text-align: center;
         bottom: 0;
         position: absolute;
+        width: calc(100% - 16px);
     }
 
     .ver-mas {
@@ -207,11 +215,11 @@ body{
         height: auto; 
         padding: 40px 24px;
         text-align: center;
-        width: 100%;
+        width: calc(100%-48px);
     }
     .skill-container{
         display: grid;
-        grid-template-columns: repeat(auto-fill, 120px);
+        grid-template-columns: repeat(auto-fill, 80px);
         gap: 40px;
         place-content: center;
         width: 80%;
@@ -219,17 +227,17 @@ body{
     }
 
     .skill-card{
-        width: 120px;
-        height: 150px;
+        width: 80px;
+        height: 100px;
     }
     .skill-card img{
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
         object-fit: cover;
     }
     .skill-titulo{
         color: var(--naranja);
-        font-size: var(--md);
+        font-size: var(--sm);
         font-weight: bold;
         margin: 0px;
     }
@@ -238,22 +246,44 @@ body{
         background-color: var(--gris);
         height: auto;
         padding: 40px 24px;
-        width: 100%;
+        width: calc(100%-48px);
     }
 
     .certificados-container{
         display: grid;
-        grid-template-columns: repeat(auto-fill, 360px);
+        grid-template-columns: repeat(auto-fill, 250px);
         gap: 26px;
         place-content: center;
+        margin-bottom: 26px;
+        grid-auto-flow: dense;
     }
 
     .certificados-card{
-        width: 360px;
-        height: 300px;
+        width: 250px;
+        height: 210px;
     }
     .certificados-card:hover{
        cursor: pointer;
+       transform: scale(1.2);
+       transition-duration: 0.5s;
+    }
+
+    .bloques{
+        display: inline;
+    }
+
+    #vermenos-certificados{
+        display: none;
+    }
+
+    #bloque2{
+        display: none;
+    }
+    #bloque3{
+        display: none;
+    }
+    #bloque4{
+        display: none;
     }
 
     .contacto-container{
@@ -261,7 +291,7 @@ body{
         height: auto; 
         padding: 40px 24px;
         text-align: center;
-        width: 100%;
+        width: calc(100%-48px);
     }
     .redes{
        display: inline;
@@ -283,9 +313,9 @@ body{
         height: 80px; 
         text-align: center;
         color: var(--white);
-        width: 100%;
+        width:100%;
         align-items: center;
-        padding: 0px 24px;
+        
     }
     
 
